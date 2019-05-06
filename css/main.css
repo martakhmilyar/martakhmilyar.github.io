@@ -1,3 +1,6 @@
+
+
+
 .container {
     display: grid;
     grid-template-columns: repeat(12, 1fr);
@@ -11,6 +14,8 @@ h1 {
     font-size: 90px;
     line-height: 70px;
     letter-spacing: -0.03em;
+    
+    margin: 0;
 
     color: #000000;
 
@@ -24,6 +29,8 @@ h2 {
     font-size: 90px;
     line-height: 70px;
     letter-spacing: -0.03em;
+    
+    margin: 0;
 
     color: #000000;
 
@@ -37,6 +44,8 @@ p {
     font-size: 16px;
     line-height: 16px;
     letter-spacing: 0.24em;
+    
+    margin: 0;
 
     color: #000000;
 
@@ -50,6 +59,8 @@ p {
     font-weight: normal;
     font-size: 10px;
     line-height: 26px;
+    
+    margin: 0;
 
     color: #000000;
 
@@ -62,13 +73,16 @@ p {
     grid-row: 4/10;
 }
 
-.img {
-    opacity: 60%;
+.img000 {
+    
     background-color: FF5151;
     overflow: hidden;
-    max-width: 100%;
-
-
     grid-column: 8/12;
     grid-row: 2/6;
+}
+
+.img000 img {
+    opacity: 0.60;
+    max-width: 100%;
+    height: auto;
 }

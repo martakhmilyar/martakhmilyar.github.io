@@ -29,10 +29,21 @@
 
     color: #000000;
     margin:0 0 2em 0;
-    background-color: rgba(255, 120, 120, 0.64);
+    
 
     grid-column: 3/8;
     grid-row: 5/6;
+    position: relative;
+}
+
+.about-bg {
+    position: absolute;
+    height: 100%;
+    width: 80vw;
+    background-color: rgba(255, 120, 120, 0.64);
+    right: 0;
+    top: 0;
+    z-index: -1;
 }
 
 .about1 {
@@ -43,6 +54,7 @@
     line-height: 73.14%;
     /* or 105px */
     letter-spacing: -0.01em;
+    margin: 0;
 
     color: rgba(0, 0, 0, 0.16);
     grid-column: 8/-1;
@@ -56,6 +68,7 @@
     font-size: 288px;
     line-height: 73.14%;
     /* or 211px */
+    margin: 0;
 
     color: rgba(0, 0, 0, 0.1);
     grid-column: 9/-1;
