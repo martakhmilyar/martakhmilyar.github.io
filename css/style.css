@@ -1,0 +1,114 @@
+html {
+    scroll-behavior: smooth;
+}
+
+html,
+* {
+    margin-top: 0;
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    background-image:
+}
+
+/* < 576px => 100% */
+.section {
+    display: grid;
+    grid-template-columns: 1fr;
+}
+
+.container {
+    min-height: 100vh;
+    border: 1px solid #000;
+}
+
+/* 540px */
+@media (min-width: 576px) {
+    .section {
+        grid-template-columns: 1fr 540px 1fr;
+    }
+
+    .container,
+    .navbar {
+        grid-column-start: 2;
+        grid-column-end: 3;
+    }
+}
+
+/* 720px */
+@media (min-width: 768px) {
+    .section {
+        grid-template-columns: 1fr 720px 1fr;
+    }
+}
+
+/* 960px */
+@media (min-width: 992px) {
+    .section {
+        grid-template-columns: 1fr 960px 1fr;
+    }
+}
+
+/* 1140px */
+@media (min-width: 1200px) {
+    .section {
+        grid-template-columns: 1fr 1140px 1fr;
+    }
+}
+
+.section {}
+
+.home.section {}
+
+.home.section .container {}
+
+.about.section {}
+
+.portfolio.section {}
+
+.contacts.section {}
+.column-red{}
+.background-img{}
+
+header {
+    position: fixed;
+    top: 0;
+    width: 100%;
+}
+
+.navbar {
+    background-color: chartreuse;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.navbar .logo {
+    display: block;
+    text-decoration: none;
+}
+
+.navbar .navmenu,
+.navbar .navmenu li {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.navbar .navmenu {
+    display: flex;
+    flex-direction: row;
+}
+
+.navbar .navmenu a {
+    display: block;
+    padding: 1em 2em;
+    text-decoration: none;
+}
+
+.active {
+    color: red;
+    background-color: antiquewhite;
+}

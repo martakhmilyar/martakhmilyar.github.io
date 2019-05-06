@@ -1,0 +1,63 @@
+#about{
+    display: grid;
+    grid-template-rows: 55px auto auto auto auto auto;
+}
+.hi {
+    font-family: Montserrat;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 36px;
+    line-height: 219.42%;
+    /* or 79px */
+    display: flex;
+    align-items: center;
+
+    color: #FF5151;
+
+    grid-column: 3/8;
+    grid-row: 4/5;
+}
+
+.text-about-me {
+    font-family: Montserrat;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 18px;
+    line-height: 39px;
+    display: flex;
+    align-items: center;
+
+    color: #000000;
+    margin:0 0 2em 0;
+    background-color: rgba(255, 120, 120, 0.64);
+
+    grid-column: 3/8;
+    grid-row: 5/6;
+}
+
+.about1 {
+    font-family: Montserrat;
+    font-style: normal;
+    font-weight: 900;
+    font-size: 144px;
+    line-height: 73.14%;
+    /* or 105px */
+    letter-spacing: -0.01em;
+
+    color: rgba(0, 0, 0, 0.16);
+    grid-column: 8/-1;
+    grid-row: 2/3;
+}
+
+.about2 {
+    font-family: Montserrat;
+    font-style: normal;
+    font-weight: 900;
+    font-size: 288px;
+    line-height: 73.14%;
+    /* or 211px */
+
+    color: rgba(0, 0, 0, 0.1);
+    grid-column: 9/-1;
+    grid-row: 3/5;
+}
