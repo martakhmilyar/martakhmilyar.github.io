@@ -1,0 +1,124 @@
+#container {
+    width: 500px;
+    height: 500px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    -webkit-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+}
+
+#slider {
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    grid-column-gap: 30px;
+    grid-template-rows: 60px 50px auto auto 100px;
+}
+
+#slider-1 {
+    grid-column: 3/9;
+    grid-row: 2/5;
+}
+
+#slider-2 {
+    grid-column: 8/11;
+    grid-row: 3/4;
+}
+
+.slides {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.slides img {
+    width: 100%;
+    height: auto;
+
+}
+
+
+/*! Flickity v1.0.2
+http://flickity.metafizzy.co
+---------------------------------------------- */
+.flickity-enabled {
+    position: relative;
+}
+
+.flickity-enabled:focus {
+    outline: none;
+}
+
+.flickity-viewport {
+    overflow: hidden;
+    position: relative;
+    height: 100%;
+}
+
+.flickity-slider {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+}
+
+/* draggable */
+.flickity-enabled.is-draggable {
+    -webkit-tap-highlight-color: transparent;
+    tap-highlight-color: transparent;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+
+.flickity-enabled.is-draggable .flickity-viewport {
+    cursor: move;
+    cursor: -webkit-grab;
+    cursor: grab;
+}
+
+.flickity-enabled.is-draggable .flickity-viewport.is-pointer-down {
+    cursor: -webkit-grabbing;
+    cursor: grabbing;
+}
+
+.gallery-cell {
+    width: 100%;
+}
+
+
+
+    .btn-next {
+        animation: arro 2s infinite;
+        display: block;
+        cursor: pointer;
+        grid-column: 9/10;
+        grid-row: 4/5;
+        
+    }
+
+    .btn-next:focus {
+        outline: none;
+    }
+
+    .btn-next #arrow-line {
+        -webkit-transition: all 0.3s ease-out;
+        transition: all 0.3s ease-out;
+        -webkit-transform-origin: right bottom;
+        transform-origin: right bottom;
+    }
+
+    .btn-next:hover #arrow-line {
+        -webkit-transform: scaleX(1.5);
+        transform: scaleX(1.5);
+    }
+@keyframes arro {
+
+    0%,
+    100% {
+        transform: translateY(0px);
+    }
+
+    50% {
+        transform: translateX(20px);
+    }

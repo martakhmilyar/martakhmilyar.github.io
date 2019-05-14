@@ -9,13 +9,14 @@ html,
 }
 
 body {
-    margin: 0;    
+    margin: 0;
 }
 
 /* < 576px => 100% */
 .section {
     display: grid;
     grid-template-columns: 1fr;
+    overflow: hidden;
 }
 
 .container {
@@ -63,53 +64,21 @@ body {
 
 .home.section .container {}
 
+.slider.section {}
+
 .about.section {}
 
 .portfolio.section {}
 
 .contacts.section {}
-.column-red{}
-.background-img{}
 
-header {
+.column-red {
+    background: #FF5151;
+    box-shadow: 4px 0px 4px rgba(0, 0, 0, 0.25);
+    width: 275px;
+    height: 100vh;
     position: fixed;
-    top: 0;
-    width: 100%;
-}
-
-.navbar {
-    background-color: chartreuse;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-}
-
-.navbar .logo {
-    display: block;
-    text-decoration: none;
-}
-
-.navbar .navmenu,
-.navbar .navmenu li {
-    list-style: none;
-    margin: 0;
-    padding: 0;
-}
-
-.navbar .navmenu {
-    display: flex;
-    flex-direction: row;
-}
-
-.navbar .navmenu a {
-    display: block;
-    padding: 1em 2em;
-    text-decoration: none;
-}
-
-.active {
-    color: red;
-    background-color: antiquewhite;
+    z-index: 6;
 }
 
 .background {
@@ -120,7 +89,7 @@ header {
 }
 
 .background img {
-   max-width: 100%;
+    opacity: 0.15;
+    max-width: 100%;
     height: auto;
 }
-

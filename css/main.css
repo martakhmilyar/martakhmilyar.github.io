@@ -5,10 +5,10 @@
     display: grid;
     grid-template-columns: repeat(12, 1fr);
     grid-column-gap: 30px;
-    grid-template-rows: 65px auto auto 20px auto 10px auto 40px auto auto;
+    grid-template-rows: 65px auto auto 20px auto 80px auto 150px;
 }
 
-h1 {
+h3 {
     font-family: Montserrat;
     font-weight: bold;
     font-size: 90px;
@@ -30,7 +30,7 @@ h2 {
     line-height: 70px;
     letter-spacing: -0.03em;
     
-    margin: 0;
+    margin: 0 0 -25px 0;
 
     color: #000000;
 
@@ -45,12 +45,12 @@ p {
     line-height: 16px;
     letter-spacing: 0.24em;
     
-    margin: 0;
+    margin: 30px 0 0 -45px;
 
     color: #000000;
 
-    grid-column: 7/8;
-    grid-row: 7/8;
+    grid-column: 7/9;
+    grid-row: 6/7;
 }
 
 .text1 {
@@ -65,24 +65,43 @@ p {
     color: #000000;
 
     grid-column: 8/12;
-    grid-row: 9/10;
+    grid-row: 7/8;
 }
 
-.svg1 {
+.arrow1{
+    animation: arr 2s infinite;
+    z-index: 1;
+     grid-column: 13/-1;
+    grid-row: 3/8;
+   margin: -30px 0 0 22px;
+   
+}
+
+@keyframes arr {
+  0%,100% {
+    transform: translateY(0px);
+  }
+  50% {
+    transform: translateY(50px);
+  }
+}
+.circle1 {
+    
     grid-column: 13/-1;
-    grid-row: 4/10;
+    grid-row: 8/-1;
+    
+    margin: -30px 0 0 0;
 }
 
 .img000 {
     
-    background-color: FF5151;
     overflow: hidden;
     grid-column: 8/12;
     grid-row: 2/6;
 }
 
 .img000 img {
-    opacity: 0.60;
     max-width: 100%;
     height: auto;
+    position: relative;
 }
