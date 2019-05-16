@@ -70,18 +70,21 @@ h4 {
     grid-row:1/6 ;
 }
 .behance{
-    background-color: white;
+    color: white;
+    font-size: 40px;
     grid-column: 9/10;
     grid-row:8/9 ;
     
 }
 .instagram{
-    background-color: white;
+    font-size: 40px;
+    color: white;
     grid-column: 10/11;
     grid-row:8/9 ;
 }
 .gmail{
-    background-color: white;
+    font-size: 40px;
+    color: white;
     grid-column: 11/12;
     grid-row:8/9 ;
 }

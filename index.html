@@ -10,13 +10,13 @@
     <link rel="stylesheet" href="css/portfolio2.css">
     <link rel="stylesheet" href="css/about.css">
     <link rel="stylesheet" href="css/contacts.css">
-    <link rel="stylesheet" href="css/menu.css">
+    <link rel="stylesheet" href="css/navbar.css">
     <link href="https://fonts.googleapis.com/css?family=Montserrat:100,100i,200,200i,300,300i,400,400i,500,500i,600,600i,700,700i,800,800i,900,900i" rel="stylesheet">
     <link rel="stylesheet" href="css/main.css">
 
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.min.css">
 
-
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css" integrity="sha384-oS3vJWv+0UjzBfQzYUhtDYW+Pj2yciDJxpsK1OYPAYjqT085Qq/1cq5FLXAZQ7Ay" crossorigin="anonymous">
 
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.css" />
 
@@ -26,16 +26,23 @@
 </head>
 
 <body>
+
+
     <header>
         <div class="section">
-            <div class="navbar">
-                <a></a>
-                <ul class="navmenu">
-                    <li><a href="#top">Home</a></li>
-                    <li><a href="#about">About</a></li>
-                    <li><a href="#portfolio" class="active">Portfolio</a></li>
-                    <li><a href="#contacts">Contacts</a></li>
-                </ul>
+            <div class="navbar navbar-desktop">
+                <a href="#top" class="logo"></a>
+                <button class="navbar-toggler">
+                    <span>Menu</span>
+                </button>
+                <nav>
+                    <ul>
+                        <li><a href="#top">Home</a></li>
+                        <li><a href="#about">About</a></li>
+                        <li><a href="#portfolio">Portfolio</a></li>
+                        <li><a href="#contacts">Contacts</a></li>
+                    </ul>
+                </nav>
             </div>
         </div>
     </header>
@@ -77,12 +84,18 @@
     </div>
     <div class="section portfolio">
         <div class="container" id="portfolio">
-            <a data-fancybox="gallery" href="illustration/%D1%84%D0%BE%D1%80%D0%B7%D0%B0%D1%861.jpg" class="portfolio-item portfolio-item-1" data-width="1440" data-height="684"><img src="illustration/%D1%84%D0%BE%D1%80%D0%B7%D0%B0%D1%861.jpg" style="cursor:pointer"></a>
-            <a data-fancybox="gallery" class="portfolio-item portfolio-item-2" data-width="1440" data-height="1140"><img src="illustration/3.1.jpg" style="cursor:pointer"></a>
-            <a data-fancybox="gallery" class="portfolio-item portfolio-item-3 " data-width="1440" data-height="1296"><img src="illustration/%D0%BE%D0%B1%D0%BA%D0%BB%D0%B0%D0%B4%D0%B8%D0%BD%D0%BA%D0%B01.jpg" style="cursor:pointer"></a>
-            <a data-fancybox="gallery" class="portfolio-item portfolio-item-4 " data-width="1440" data-height="648"><img src="illustration/4.1.jpg" style="cursor:pointer"></a>
-            <a data-fancybox="gallery" class="portfolio-item portfolio-item-5" data-width="1440" data-height="899"><img src="illustration/1.1.1.1.jpg" style="cursor:pointer"></a>
-            <a data-fancybox="gallery" class="portfolio-item portfolio-item-6 " data-width="1440" data-height="2042"><img src="illustration/%D1%84%D0%BE%D1%80%D0%B7%D0%B0%D1%862.jpg" style="cursor:pointer"></a>
+            <a data-fancybox="gallery" href="illustration/2.jpg" class="portfolio-item portfolio-item-1" data-width="1440" data-height="684"><img src="illustration/2.jpg" style="cursor:pointer"></a>
+
+            <a data-fancybox="gallery" href="illustration/1.jpg" class="portfolio-item portfolio-item-2" data-width="1440" data-height="1140"><img src="illustration/1.jpg" style="cursor:pointer"></a>
+
+            <a data-fancybox="gallery" href="illustration/3.jpg" class="portfolio-item portfolio-item-3 " data-width="1440" data-height="1296"><img src="illustration/3.jpg" style="cursor:pointer"></a>
+
+            <a data-fancybox="gallery" href="illustration/4.jpg" class="portfolio-item portfolio-item-4 " data-width="1440" data-height="648"><img src="illustration/4.jpg" style="cursor:pointer"></a>
+
+            <a data-fancybox="gallery" href="illustration/5.jpg" class="portfolio-item portfolio-item-5" data-width="1440" data-height="899"><img src="illustration/5.jpg" style="cursor:pointer"></a>
+
+            <a data-fancybox="gallery" href="illustration/6.jpg" class="portfolio-item portfolio-item-6 " data-width="1440" data-height="2042"><img src="illustration/6.jpg" style="cursor:pointer"></a>
+
             <div class="paralax1 portfolio1" data-rellax-speed="7">Portfolio</div>
             <div class="paralax2 portfolio2" data-rellax-speed="-4">Portfolio</div>
         </div>
@@ -170,9 +183,9 @@
                 <circle cx="33.5" cy="33.5" r="32" transform="rotate(-90 33.5 33.5)" stroke="black" stroke-width="3" />
             </svg>
 
-            <div class="behance"></div>
-            <div class="instagram"></div>
-            <div class="gmail"></div>
+            <a href="https://www.behance.net/martakhmil751d" target="_blank" class="behance"><i class="fab fa-behance"></i></a>
+            <a href="https://www.instagram.com/mkhmilyar_illustration/" target="_blank" class="instagram"><i class="fab fa-instagram"></i> </a>
+            <a href="https://www.google.com/gmail/" target="_blank" class="gmail"><i class="far fa-envelope"></i></a>
 
 
             <div class="circle"><svg width="558" height="425" viewBox="0 0 558 425" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -205,28 +218,78 @@
     <script>
         // Accepts any class name
         var paralax1 = new Rellax('.paralax1', {
-            speed: 3,
+            speed: 0,
             center: false,
             round: true,
-            horizontal: true,
+            horizontal: false,
             vertical: false
         });
-
     </script>
-    
-     <script>
+
+    <script>
         // Accepts any class name
         var paralax2 = new Rellax('.paralax2', {
-            speed: -10,
+            speed: 0,
             center: false,
             wrapper: null,
             round: true,
-            horizontal: true,
+            horizontal: false,
             vertical: false
-            
-        });
 
+        });
     </script>
+
+
+    <script src="https://cdn.jsdelivr.net/npm/menuspy@1.3.0/dist/menuspy.min.js" integrity="sha256-nLsUsNbD5SyESe6GrfVY1ay1ThxDUl5FZPqwhFRCzxA=" crossorigin="anonymous"></script>
+
+    <script>
+        /* menu scroll spy */
+        $(document).ready(function() {
+            var navmenu = $('.navbar ul')[0];
+            var ms = new MenuSpy(navmenu);
+        });
+        $(document).ready(function() {
+            var mobileMaxWidth = 768,
+                lastClickTime = 0,
+                $navbar = $('.navbar'),
+                $toggler = $navbar.find('.navbar-toggler'),
+                $nav = $navbar.find('ul');
+
+            var navbarResp = function() {
+                if ($(window).width() > mobileMaxWidth)
+                    $navbar.addClass('navbar-desktop').removeClass('navbar-mobile');
+                else
+                    $navbar.addClass('navbar-mobile').removeClass('navbar-desktop');
+            };
+            var _ = navbarResp();
+            window.onresize = navbarResp;
+
+            /* uncomment to test mobile version of navbar  */
+            // $navbar.addClass('navbar-mobile').removeClass('navbar-desktop');
+
+            $toggler.click(function() {
+
+                var interval = 200;
+                var currClickTime = new Date().getTime();
+                var diff = currClickTime - lastClickTime;
+                lastClickTime = currClickTime;
+
+                if (diff < interval) {
+                    return false;
+                } else {
+                    if ($navbar.hasClass('navbar-open'))
+                        $navbar.removeClass('navbar-open');
+                    else
+                        $navbar.addClass('navbar-open');
+                }
+            });
+
+            $nav.find('a').click(function() {
+                $navbar.toggleClass('navbar-open');
+            });
+        });
+    </script>
+
 
 </body>
 
